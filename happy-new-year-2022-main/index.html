@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script id="jqbb" src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            user-select: none;
+            margin: 0;
+        }
+        
+        .city {
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            z-index: 100;
+        }
+        
+        .city img {
+            width: 100%;
+        }
+        
+        audio {
+            opacity: 0;
+        }
+        
+        .shape {
+            z-index: 9999 !important;
+        }
+    </style>
+    <title>Happy new year</title>
+</head>
+
+<body onselectstart="return false">
+    <div class="star comet"></div>
+    <script src="index.js"></script>
+    <canvas id="cas" style="background-color: rgba(0, 5, 24, 1); z-index: 9999">
+      Nghiemtv.com
+    </canvas>
+    <div class="city">
+        <img src="img/city.png" alt="" />
+    </div>
+    <img src="img/moon.png" alt="" id="moon" style="visibility: hidden" />
+    <div style="display: none">
+        <div class="shape">🏮2022</div>
+        <!-- <div class="shape">🏮 I </div>
+        <div class="shape">🏮 Love</div>
+        <div class="shape">🏮 nghiemtv</div> -->
+
+    </div>
+    <audio autoplay loop id="music">
+      <source src="mp3/xinnian.mp3" />
+    </audio>
+    <iframe id="iframMusic" allow="autoplay" style="display: none" src="mp3/xinnian.mp3"></iframe>
+    <script src="jquery.min.js"></script>
+    <script src="fire.js"></script>
+    <script src="talk.js"></script>
+</body>
+
+</html>
